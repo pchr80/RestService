@@ -1,6 +1,7 @@
 package pl.rest.service;
 
 import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 import pl.rest.entity.Example;
 
 import javax.persistence.EntityManager;
@@ -9,7 +10,7 @@ import javax.transaction.Transactional;
 import java.util.Collections;
 import java.util.List;
 
-@Repository
+@Service
 @Transactional
 public class ExampleService {
     @PersistenceContext

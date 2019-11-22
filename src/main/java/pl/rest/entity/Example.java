@@ -39,17 +39,19 @@ public class Example {
         this.createdAt = createdAt;
     }
 
-    public Example(Long id, @NotNull String name, Date createdAt) {
+
+    public Example(Long id, String name, Date createdAt) {
         this.id = id;
         this.name = name;
         this.createdAt = createdAt;
     }
 
-    public Example(@NotNull String name) {
+    public Example(String name) {
 
         this.name = name;
 
     }
+
 
     public Example() {}
 }
